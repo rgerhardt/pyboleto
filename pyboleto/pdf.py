@@ -303,7 +303,7 @@ class BoletoPDF(object):
         self.pdfCanvas.drawString(
             0,
             (((linhaInicial + 0) * self.heightLine)) + self.deltaTitle,
-            'Endereço Cedente'
+            'Endereço do Beneficiário'
         )
         self.pdfCanvas.drawString(
             self.width - (30 * mm) + self.space,
@@ -680,7 +680,7 @@ class BoletoPDF(object):
         self.pdfCanvas.drawString(
             self.width - (45 * mm) + self.space,
             y + self.deltaTitle,
-            'Agência/Código cedente'
+            'Agência/Código beneficiário'
         )
 
         self.pdfCanvas.setFont('Helvetica', self.fontSizeValue)
